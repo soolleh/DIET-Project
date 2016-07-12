@@ -207,11 +207,40 @@ h3.menu-item-title {
   padding-left: 25px;
   padding-right: 25px;
   overflow: hidden;
-  height: 286px;
+  height: 310px;
   border: 2px solid black;
   margin-left: 0px;
-  
+   border: 2px solid #3F0C1F;
+  border-radius: 5px;
+  box-shadow: 0 0 25px #3F0C1F;
 }
+
+.container .row .quick-links{
+   border: 2px solid #3F0C1F;
+  border-radius: 5px;
+  box-shadow: 0 0 25px #3F0C1F;
+
+}
+
+
+.container .row .notifications{
+  
+  
+  border: 2px solid #3F0C1F;
+  border-radius: 5px;
+  box-shadow: 0 0 25px #3F0C1F;
+
+}
+
+
+.container .row .important-links{
+   border: 2px solid #3F0C1F;
+  border-radius: 5px;
+  box-shadow: 0 0 25px #3F0C1F;
+
+}
+
+
 
 .container .row h3{
   text-align: center;
