@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <!--<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">-->
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <!-- Add the JQuery UI CSS -->
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <link href="css/jquery-ui.min.css" rel="stylesheet">
+
+  <!-- Add the JQuery UI JS file -->
+  <script src ="js/jquery-ui.min.js" > </script>
   </head>
 <body>
   <!--***********Header**********-->
@@ -154,17 +162,17 @@
 
 
 	<div class="row">
-		
-
 		<div class="notifications col-md-8">
-			<h3>Notifications</h3>
-		<p>
-		Vestassapede et donec ut est liberos sus et eget sed eget. 
-		Quisqueta habitur augue magnisl magna phasellus sagittitor 
-		ant curabiturpis molesuada amet. Tricessem faucibulum sit 
-		sed eleifendisse accumsan justo in tor vel purus
-		<a href="#">Read More</a>
-		</p>
+			<div id="accordion">
+				<h4>Notifications</h4>
+			<div>
+				Batman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger, and first appeared in Detective Comics #27 (May 1939). Originally named "the Bat-Man", the character is also referred to by such epithets as the "Caped Crusader",the "Dark Knight", and the "World's Greatest Detective".
+			</div>
+				<h4>Events</h4>
+			<div>
+				The Flash is a fictional superhero appearing in American comic books published by DC Comics. Created by writer Gardner Fox and artist Harry Lampert, the original Flash first appeared in Flash Comics #1 (January 1940).
+			</div>
+		</div>
 		</div>
 
 		<div class="important-links col-md-4">
@@ -197,12 +205,25 @@
       <div class="text-center">&copy; Copyright D.I.E.T Srinagar 2016 Developed By Soleh</div>
     </div>
   </footer>
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $("#accordion").accordion({
+    // Slide animation or not or length
+    animate: 1000,
+    // Starting tab
+    active: 1,
+    // Collapsible if same tab is clicked
+    collapsible: false,
+    // Event that triggers
+    event: "click",
+    // Height based on content (content) or largest (auto)
+    heightStyle: "content"
+  });
+}); // End of JQuery
+
+</script>
 
 
-
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  
 </body>
 </html>
