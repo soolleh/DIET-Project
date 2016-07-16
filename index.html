@@ -133,36 +133,45 @@
  <!--***********Main Content- End**********-->
 
 	<div class="row">
-		<div class="menu-item-tile col-md-8">
-        <div class="row">
-          <div class="col-sm-5 hidden-xs">
-            <div class="menu-item-photo">
-             <img src="images/placehold-img-1200.jpg" width="246px" height="206px" alt="DIET Srinagar">
+		<div class="col-md-8">
+        	<div class="menu-item-tile">
+            <h3>About DIET Srinagar</h3>
+            <div id="shTabs">
+				<ul>
+  					<li><a href="#aboutus">About Us</a></li>
+  					<li><a href="#objectives">Objectives</a></li>
+  					<li><a href="#mission">Mission</a></li>
+				</ul>
+            <div id="aboutus"><div id ="img1"><img src="images/placehold-img-768.jpg" width="320" height="230"></div>DIET is the most significant educational intervention in the country, while the NCERT came up in the 1960’s and the State Councils of Education Research and Training came up in 1970’s, the need for a third tier of training and resource support structure, right at the district level was genuinely felt in order to improve the quality of basic education. As result DIET’s were set up in almost all the districts of all the states in the country.<a href="#">Read More</a>
+            </div>
+
+            <div id="objectives">
+            	Iron Man (Tony Stark) is a fictional superhero appearing in American comic books published by Marvel Comics, as well as its associated media. The character was created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. He made his first appearance in Tales of Suspense #39 (cover dated March 1963).
+            </div>
+
+            <div id="mission">
+            	Superman is a fictional superhero appearing in American comic books published by DC Comics. The character is considered an American cultural icon. The Superman character was created by writer Jerry Siegel and artist Joe Shuster in 1933; the character was sold to Detective Comics, Inc. (later DC Comics) in 1938. 
             </div>
           </div>
-          <div class="menu-item-description col-sm-7">
-            <h3 class="menu-item-title">About DIET Srinagar</h3>
-            <p class="menu-item-details">DIET is the most significant educational intervention in the country, while the NCERT came up in the 1960’s and the State Councils of Education Research and Training came up in 1970’s, the need for a third tier of training and resource support structure, right at the district level was genuinely felt in order to improve the quality of basic education. As result DIET’s were set up in almost all the districts of all the states in the country.<a href="#">Read More</a></p>
-          </div>
-        </div>
-      </div>
+         </div>
+         </div>
 
-      		<div class="quick-links col-md-4">
-		<h3>Quick Links</h3>
-		<ul>
-			<li><a href="#">D.Ed</a></li>
-			<li><a href="#">Syllabus</a></li>
-			<li><a href="#">Science Exhibtion</a></li>
-			<li><a href="#">Resources</a></li>
-		</ul>
+      	<div class="col-md-4">
+      		<div class="quick-links">
+			<h3>Quick Links</h3>
+				<ul>
+					<li><a href="#">D.Ed</a></li>
+					<li><a href="#">Syllabus</a></li>
+					<li><a href="#">Science Exhibtion</a></li>
+					<li><a href="#">Resources</a></li>
+				</ul>
+			</div>
 		</div>
-	
 	</div>
-	
-
 
 	<div class="row">
-		<div class="notifications col-md-8">
+		<div class="col-md-8">
+			<div class="notifications">
 			<div id="accordion">
 				<h4>Notifications</h4>
 			<div>
@@ -174,8 +183,11 @@
 			</div>
 		</div>
 		</div>
+		</div>
 
-		<div class="important-links col-md-4">
+
+		<div class="col-md-4">
+		<div class="important-links">	
 			<h3>Important Links</h3>
 		<ul>
 			<li><a href="#">Directorate Of School</a></li>
@@ -183,6 +195,7 @@
 			<li><a href="#">S.I.E</a></li>
 			<li><a href="#">Teacher's Forum</a></li>
 		</ul>
+		</div>
 		</div>
 	</div>
 </div>
@@ -211,13 +224,27 @@
     // Slide animation or not or length
     animate: 1000,
     // Starting tab
-    active: 1,
+    active: 0,
     // Collapsible if same tab is clicked
     collapsible: false,
     // Event that triggers
     event: "click",
     // Height based on content (content) or largest (auto)
     heightStyle: "content"
+  });
+
+	$("#shTabs").tabs({
+    // The event that switches the panel
+    event: "click",
+    // Effects: fadeIn, fadeOut, slideDown, slideUp, animate
+    show: "fadeIn",
+    hide: "fadeOut",
+    // Starting panel
+    active: 0,
+    // Collapse by clicking the current tab
+    collapsible: true,
+    // Height based on content (content) or largest (auto)
+    heightStyle: "auto"
   });
 }); // End of JQuery
 
