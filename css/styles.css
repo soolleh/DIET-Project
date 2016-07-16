@@ -158,6 +158,7 @@ h3.menu-item-title {/*About DIET tile*/
   box-shadow: 0 0 25px #3F0C1F;
   padding: 15px;
   padding-top: 0;
+  background: url('../bg5.jpg');
 }
 .quick-links{/*Quick-link tile*/
   border: 2px solid #3F0C1F;
@@ -166,6 +167,7 @@ h3.menu-item-title {/*About DIET tile*/
   height:233px;
   padding: 15px;
   padding-top: 0;
+  background: url('../bg5.jpg');
 
 }
 
@@ -175,6 +177,7 @@ h3.menu-item-title {/*About DIET tile*/
   box-shadow: 0 0 25px #3F0C1F;
   padding: 15px;
   margin-bottom: 25px;
+  background: url('../bg5.jpg');
 }
 .important-links{/*imp-link tile*/
    border: 2px solid #3F0C1F;
@@ -182,6 +185,7 @@ h3.menu-item-title {/*About DIET tile*/
   box-shadow: 0 0 25px #3F0C1F;
   padding: 15px;
   padding-top:0; 
+  background: url('../bg5.jpg');
 }
 .container .row h3{/*all tiles tile*/
   text-align: center;
@@ -208,6 +212,46 @@ h3.menu-item-title {/*About DIET tile*/
   margin-right: 20px;
  }
 
+#accordion .ui-state-active {
+font-size:1.5em;
+color:green;
+
+}
+
+
+#accordion .ui-accordion-content {
+  width: 100%;
+  background: url('../bg5.jpg');
+  color: #222;
+  font-size: .8em;
+  line-height: 16pt;
+}
+#accordion .ui-accordion-content > * {
+  margin: 0;
+  padding: 20px;
+
+}
+
+#accordion .ui-accordion-header{
+  background: linear-gradient(120deg, #3F0C1F,#03274B,#155799, #159957 );
+
+}
+
+#shTabs .ui-widget-header{
+  background: linear-gradient(120deg, #3F0C1F,#03274B,#155799, #159957 );
+}
+
+#shTabs .ui-widget-content {
+  width: 100%;
+  background: url('../bg5.jpg');
+  color: #222;
+  font-size: .8em;
+  line-height: 16pt;
+  border: none;
+}
+.ui-tabs{
+  padding:0px;
+}
 
 /************************************************************ Large devices only ************************************************************/
 @media (min-width: 1200px) {
