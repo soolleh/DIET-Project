@@ -164,7 +164,6 @@ h3.menu-item-title {/*About DIET tile*/
   border: 2px solid #3F0C1F;
   border-radius: 5px;
   box-shadow: 0 0 25px #3F0C1F;
-  height:233px;
   padding: 15px;
   padding-top: 0;
   background: url('../bg5_.jpg');
@@ -239,6 +238,7 @@ color:green;
 
 #shTabs .ui-widget-header{
   background: linear-gradient(120deg, #3F0C1F,#03274B,#155799, #159957 );
+  padding:0;
 }
 
 #shTabs .ui-widget-content {
@@ -249,8 +249,29 @@ color:green;
   line-height: 16pt;
   border: none;
 }
-.ui-tabs{
-  padding:0px;
+.quick_links a{
+  margin-left: 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.1em;
+  color:black;
+  padding: 20px;
+  padding-right: 60px;
+  line-height: 45px;
+
+}
+.quick_links a:hover{
+background: linear-gradient(120deg, #3F0C1F,#03274B,#155799, #159957 );
+color:white;
+
+}
+.hr2{
+  padding:0;
+  margin: 10px;
+  border: 1px solid black;
+  width:75%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /************************************************************ Large devices only ************************************************************/
@@ -364,9 +385,10 @@ display: block;
   padding-left: 30px;
   margin-bottom: 25px;
 }
-.quick-links{
-  height:260px;
+.quick_links a{
+  line-height: 58px;
 }
+
 }
 
 

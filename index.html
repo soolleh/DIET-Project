@@ -79,7 +79,6 @@
         				<ul class="dropdown-menu">          					
          					<li><a href="#">Objectives</a></li>
           					<li><a href="#">Mission</a></li>
-          					<li><a href="#">Departments</a></li>
           					<li><a href="#">Principal's Messsage</a></li> 
         				</ul>
       			</li>
@@ -101,11 +100,13 @@
         			<span class="caret"></span></a>
        					 <ul class="dropdown-menu">
           					<li><a href="#">Courses Offered</a></li>
+							<li><a href="#">8th Class</a></li>
+
         				</ul>
       			</li>
 
       			<li class="dropdown">
-       			 	<a class="dropdown-toggle" data-toggle="dropdown" href="#">D.I.E.T Program
+       			 	<a class="dropdown-toggle" data-toggle="dropdown" href="#">DIET Program
         			<span class="caret"></span></a>
        					 <ul class="dropdown-menu">
           					<li><a href="#">Training Schedule</a></li>
@@ -114,7 +115,7 @@
         				</ul>
       			</li>
 
-      			<li><a href="#">8th Class</a></li>
+      			<li><a href="#">Departments</a></li>
     </ul>
     </div>
 </nav>
@@ -148,29 +149,13 @@
             	Iron Man (Tony Stark) is a fictional superhero appearing in American comic books published by Marvel Comics, as well as its associated media. The character was created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. He made his first appearance in Tales of Suspense #39 (cover dated March 1963).
             </div>
 
-            <div id="mission" class="hidden-xs">
+            <div id="mission">
             	Superman is a fictional superhero appearing in American comic books published by DC Comics. The character is considered an American cultural icon. The Superman character was created by writer Jerry Siegel and artist Joe Shuster in 1933; the character was sold to Detective Comics, Inc. (later DC Comics) in 1938. 
             </div>
           </div>
          </div>
-         </div>
 
-      	<div class="col-md-4">
-      		<div class="quick-links">
-			<h3>Quick Links</h3>
-				<ul>
-					<li><a href="#">D.Ed</a></li>
-					<li><a href="#">Syllabus</a></li>
-					<li><a href="#">Science Exhibtion</a></li>
-					<li><a href="#">Resources</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-8">
-			<div class="notifications">
+         	<div class="notifications">
 			<div id="accordion">
 				<h4>Notifications</h4>
 			<div>
@@ -182,18 +167,32 @@
 			</div>
 		</div>
 		</div>
-		</div>
+         </div>
 
-
-		<div class="col-md-4">
-		<div class="important-links">	
+      	<div class="col-md-4">
+      		<div class="quick-links">
+			<h3>Quick Links</h3>
+				<div class="quick_links">
+					<a href="#">D.Ed</a><br>
+					<hr class="hr2">
+					<a href="#">Syllabus</a><br>
+					<hr class="hr2">
+					<a href="#">Science Exhibtion</a><br>
+					<hr class="hr2">
+					<a href="#">Resources</a>
+				</div>
+			
 			<h3>Important Links</h3>
-		<ul>
-			<li><a href="#">Directorate Of School</a></li>
-			<li><a href="#">J and k Board</a></li>
-			<li><a href="#">S.I.E</a></li>
-			<li><a href="#">Teacher's Forum</a></li>
-		</ul>
+			<div class="quick_links">
+				<a href="#">Directorate Of School</a><br>
+				<hr class="hr2">
+				<a href="#">J and k Board</a><br>
+				<hr class="hr2">
+				<a href="#">Teacher's Forum</a>
+				<hr class="hr2">
+				<a href="#">S.I.E</a></li><br>
+				
+			</div>
 		</div>
 		</div>
 	</div>
@@ -242,7 +241,7 @@
     // Starting panel
     active: 0,
     // Collapse by clicking the current tab
-    collapsible: true,
+    collapsible: false,
     // Height based on content (content) or largest (auto)
     heightStyle: "content"
   });
