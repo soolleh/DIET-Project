@@ -158,7 +158,7 @@ h3.menu-item-title {/*About DIET tile*/
   box-shadow: 0 0 25px #3F0C1F;
   padding: 15px;
   padding-top: 0;
-  background: url('../bg5.jpg');
+  background: url('../bg5_.jpg');
 }
 .quick-links{/*Quick-link tile*/
   border: 2px solid #3F0C1F;
@@ -167,7 +167,7 @@ h3.menu-item-title {/*About DIET tile*/
   height:233px;
   padding: 15px;
   padding-top: 0;
-  background: url('../bg5.jpg');
+  background: url('../bg5_.jpg');
 
 }
 
@@ -177,7 +177,7 @@ h3.menu-item-title {/*About DIET tile*/
   box-shadow: 0 0 25px #3F0C1F;
   padding: 15px;
   margin-bottom: 25px;
-  background: url('../bg5.jpg');
+  background: url('../bg5_.jpg');
 }
 .important-links{/*imp-link tile*/
    border: 2px solid #3F0C1F;
@@ -185,7 +185,7 @@ h3.menu-item-title {/*About DIET tile*/
   box-shadow: 0 0 25px #3F0C1F;
   padding: 15px;
   padding-top:0; 
-  background: url('../bg5.jpg');
+  background: url('../bg5_.jpg');
 }
 .container .row h3{/*all tiles tile*/
   text-align: center;
@@ -221,7 +221,7 @@ color:green;
 
 #accordion .ui-accordion-content {
   width: 100%;
-  background: url('../bg5.jpg');
+  background: url('../bg5_.jpg');
   color: #222;
   font-size: .8em;
   line-height: 16pt;
@@ -243,7 +243,7 @@ color:green;
 
 #shTabs .ui-widget-content {
   width: 100%;
-  background: url('../bg5.jpg');
+  background: url('../bg5_.jpg');
   color: #222;
   font-size: .8em;
   line-height: 16pt;
