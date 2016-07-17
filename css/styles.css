@@ -70,6 +70,7 @@ body {
 }
 #nav-list a span {/*Glyphicon-itself*/
   font-size: 1em;
+
 }
 /*************Header-end********************/
 #collapsable-nav{
@@ -273,6 +274,29 @@ color:white;
   margin-right: auto;
   margin-left: auto;
 }
+#aboutus{
+  position: relative;
+  
+}
+
+.readmore{
+  position: absolute;
+  left:545px;
+  bottom: 12px;
+}
+
+.readmore a:hover{
+  background: linear-gradient(120deg, #3F0C1F,#03274B,#155799, #159957 );
+  text-decoration: none;
+  color:white;
+  padding:5px;
+}
+
+.readmore a span {
+  font-size: .8em;
+  margin-right: 5px;
+}
+
 
 /************************************************************ Large devices only ************************************************************/
 @media (min-width: 1200px) {
@@ -357,7 +381,9 @@ display: block;
   box-shadow: 0 0 50px #3F0C1F;
   border: 2px solid #3F0C1F;
   }
-
+#nav-list2{
+  font-size: .9em;
+}
 #nav-list2 li ul li a:hover{
   background:#aaa;
 }
@@ -386,7 +412,13 @@ display: block;
   margin-bottom: 25px;
 }
 .quick_links a{
-  line-height: 58px;
+line-height:66px; 
+}
+
+.readmore{
+  position: absolute;
+  left:200px;
+  bottom: 12px;
 }
 
 }
@@ -419,11 +451,6 @@ display: block;
   font-size: .8em;
 
 }
-#nav-list {
-  margin-top: 15px;
-  position: relative;
-  bottom:5px;
-}
 
 #nav-list2{
   font-size: .75em;
@@ -443,11 +470,16 @@ display: block;
 #nav-list {
   margin-top: 5px;
   position: absolute;
-  left:515px;
-  top:50px;
+  left:550px;
+  top:65px;
+  font-size: .85em;
 }
+.nav>li>a{
+  padding: 10px;
+}
+
 #nav-list2 {
-  font-size: .8em;
+  font-size: .7em;
   position:absolute;
   left:1px;
   top:2px;

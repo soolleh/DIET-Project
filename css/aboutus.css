@@ -1,0 +1,28 @@
+@import url("styles.css");
+
+.aboutus_p{
+  font-size: 1.3em;
+  padding: 60px;
+  text-align: justify;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 30px;
+}
+
+#obj_list li{
+  font-size: 1.2em;
+  padding: 50px;
+  text-align: justify;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 50px;
+  line-height: 30px;
+
+}
+
+
+.container .row h3{
+	margin-bottom:20px; 
+	margin-top: 50px;
+}
