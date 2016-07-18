@@ -63,6 +63,17 @@
 
 }
 
+
+/**********************************************************************Super Extra small devices only *********************************************/
 @media(max-width: 560px) {
+		.aboutus_p{
+  font-size: 1em;
+  padding: 15px;
+  text-align: justify;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 1.25em;
+}
+
 
 }
