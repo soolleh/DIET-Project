@@ -59,7 +59,15 @@
   padding-bottom: 0px;
   line-height: 1.25em;
 }
+#obj_list li{
+  font-size: 1em;
+  padding: 10px;
+  text-align: justify;
+  padding-bottom: 0px;
+  margin-left: 15px;
+  line-height: 1.25em;
 
+}
 
 }
 
@@ -74,6 +82,14 @@
   padding-bottom: 0px;
   line-height: 1.2em;
 }
+#obj_list li{
+  font-size: 1em;
+  padding: 5px;
+  text-align: justify;
+  padding-bottom: 0px;
+  margin-left: 10px;
+  line-height: 1.2em;
 
+}
 
 }
