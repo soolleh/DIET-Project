@@ -279,17 +279,12 @@ color:white;
   
 }
 
-.readmore{
-  position: absolute;
-  left:545px;
-  bottom: 12px;
-}
 
 .readmore a:hover{
   background: linear-gradient(120deg, #3F0C1F,#03274B,#155799, #159957 );
   text-decoration: none;
   color:white;
-  padding:5px;
+  font-size: 1.05em;
 }
 
 .readmore a span {
@@ -415,12 +410,6 @@ display: block;
 line-height:66px; 
 }
 
-.readmore{
-  position: absolute;
-  left:200px;
-  bottom: 12px;
-}
-
 }
 
 
@@ -486,8 +475,9 @@ line-height:66px;
   bottom: 2px;
 }
 .quick-links{
-  height:auto;
+  height:auto; 
 }
+
 }
 
 /************************************************************************* Extra small devices only *********************************************/
@@ -541,6 +531,7 @@ line-height:66px;
   border: none;
   box-shadow: none;
 }
+
 }
 /*************Super Extra Small Devices******************/
 @media(max-width: 560px) {
