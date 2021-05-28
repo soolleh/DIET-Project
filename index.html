@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" ng-app='dietApp'>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-COMPATIBLE" content="IE=8"/> -->    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <base href="/">
+ -->    <title ng-bind="'DIET Sgr - '+ $root.title">DIET-Srinagar</title>
+    <link rel='icon' href='favicon.png' type="image/png">
+    <!--******************STYLE-SHEETS*****************-->  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/aboutus_departments.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--******************FONTS*****************-->
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/script.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <style>
+      .list-group-item:hover{
+        color: black;
+        /*#004968;
+*/      }
+    </style>
+</head>
+<body>
+  <loading class="loading-indicator"></loading>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#/home"  class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div><br class="visible-xs">
+          </a>
+          <a href="#/home"  class="visible-xs">
+            <div id="logo-img" style="margin-bottom: 0px;margin-left: auto;margin-right: auto;"></div>
+          </a>
+
+
+          <div class="navbar-brand">
+            <a href="#/home" ui-sref-active="activeTab"><h1>DIET Srinagar</h1></a>
+            <p>
+              <span>District Institute Of Education And Training Srinagar</span>
+            </p>
+          </div>
+
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            Menu <span class="caret"></span>
+          </button>
+        </div>
+        <span id="telphone" class="glyphicon glyphicon-phone-alt hidden-xs"><a href="tel:0194-249-3845">0194-249-3845</a></span>
+         <ul id="nav-list" class="nav navbar-nav navbar-right hidden-xs">
+                    <li>
+                        <a href="#/home" ui-sref-active="activeTab">
+                            <span class="glyphicon glyphicon-home"></span>
+                            <br class="hidden-xs">Home</a>
+                    </li>
+                    <li>
+                        <a ui-sref="about-us.info" href="#/about-us.info">
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                            <br class="hidden-xs">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-question-sign"></span>
+                            <br class="hidden-xs">Help Desk</a>
+                    </li>
+                </ul>
+            </div>
+                <!-- #nav-list -->
+        <!-- <div class="container-fluid collapse-nav-conatainer"> -->
+        <div id="collapsable-nav" class="container-fluid collapse-nav-conatainer collapse navbar-collapse">
+           <ul id="collapsable-nav-list" class="nav navbar-nav navbar-default navbar-inverse">
+            <li class="visible-xs" ui-sref-active="active"><a href="/home" >Home</a></li>
+                    <li class="dropdown" id="aboutus-li" ui-sref-active="active">
+                        <a class="dropdown-toggle" data-toggle="dropdown">About Us
+              <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a ui-sref="about-us.info" href="#/about-us.info">About Us</a></li>
+                            <li><a ui-sref="about-us.objectives" href="#/about-us/objectives">Objectives</a></li>
+                            <li><a ui-sref="about-us.mission" href="#/about-us/mission">Mission</a></li>
+                            <li><a ui-sref="about-us.infrastructure" href="#/about-us/infrastructure">Infrastructue</a></li>
+                            <li><a ui-sref="about-us.principals-message" href="#/about-us/principals-message">Principal's Messsage</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown" ui-sref-active="active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" >District Profile
+              <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/about-district" ui-sref="about-district">About District</a></li>
+                            <li><a href="#/schools" ui-sref="schools">No. Of Schools</a></li>
+                            <li><a href="#/districtMap" ui-sref="districtMap">District Map</a></li>
+                        </ul>
+                    </li>
+
+                    <li ui-sref-active="active"><a ui-sref="faculty" href="#/faculty">Faculty</a></li>
+
+                    <li class="dropdown" ui-sref-active="active">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Academics
+              <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li ><a href="#/coursesOffered" ui-sref="coursesOffered">Courses Offered</a></li>
+                            <li><a href="#/8thClass" ui-sref="8thclass">8th Class</a></li>
+
+                        </ul>
+                    </li>
+                     <li ui-sref-active="active"><a ui-sref="downloads" href="#/downloads">Downloads</a></li>
+                    <li class="dropdown" ui-sref-active="active">
+                        <a class="dropdown-toggle" data-toggle="dropdown">DIET Program
+              <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Training Schedule</a></li>
+                            <li><a href="#">Research Projects</a></li>
+                            <li><a href="#">DIET Publications</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </li>
+
+                    <li ui-sref-active="active"><a ui-sref="departments" href="#/departments">Departments</a></li>
+          </ul> <!-- collaspsable #nav-list -->
+        </div><!-- .collapse .navbar-collapse-->
+      <!-- </div> --><!-- .container-->
+    </nav><!-- #header-nav -->
+
+  </header>
+  <div id = "mains-content" class="container"> 
+  <!--[if gte IE 7]><script src="lib/angular-1.2.min.js"></script>
+<script>
+  alert("You are running Internet Explorer 7 or a later version of Internet Explorer.For better user experience please upgrade to latest version");
+</script>
+<h3>If Your Content is not loading properly we recommend you to upgrade to latest version of Internet Explorer
+<br>You can Upgrade it here <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48126">LATEST IE Version</a></h3>
+<![endif]-->
+    <div class="errorMessage" ng-if="$root.error" style="margin-bottom: 50px;"> {{$root.error}} </div>
+
+    <ui-view>
+        <div class="text-center text-heading" style="font-size: 1.5em;">Loading....</div>
+    </ui-view>
+  </div>
+<!--   <loading-spinner></loading-spinner>
+ -->
+<div class="container-fluid panel-footer">
+ <div class="container">
+        <footer>
+        <div class="row">
+          <div class="col-md-4 contact-info">
+            <img src="images/phone-call.png" width="80" height="80" class="img-circle" alt="Telphone No."><br><br><a href="tel:9018-35-2236">0194-249-3845
+            </a>
+          </div>
+          <div class="col-md-4 contact-info">
+            <img src="images/email.png" width="80" height="80" alt="Email-Address" class="img-circle" ><br><br>dietsgr@gmail.com
+          </div>
+          <div class="col-md-4 contact-info">
+            <img src="images/blue-location.png" width="80" height="80" class="img-circle" alt="location"><br><br>Bemina Srinagar
+          </div>
+        </div>
+        <hr class="hidden-lg hidden-md">
+                <div class="text-center" style="color: white;">&copy; Copyright DIET Srinagar 2016 Developed By Soleh</div>
+        </footer>
+    </div>
+</div>
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    
+    <!-- Modules -->
+    <script src="src/app.js"></script>
+    <script src="src/common/common.module.js"></script>
+    <script src="src/common/loading/loading.component.js"></script>
+    <script src="src/common/loading/loading.interceptor.js"></script>
+  </body>
+</html>
