@@ -1,0 +1,39 @@
+
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+.errorMessage{
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: red;
+}
+.activeTab{
+  font-weight: bold;
+  background: cyan;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.item-detail{
+  list-style-type: none;
+  margin-top: 30px;
+  margin-left: -10px;
+  background: lavender;
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.5em;
+}
+.text-heading{
+  font-weight: bold;
+  color: black;
+
+}
