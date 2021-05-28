@@ -1,0 +1,9 @@
+<div class="row">
+	<div class="loading-spinner" ng-if="$ctrl.showSpinner">
+		<img src="images/flickr-loading.gif" alt="loading"><br>
+     	<span class="text-center text-heading" style="font-size: 1.5em;background: lavender;">Loading....</span>
+	</div>
+
+<div class="errorMessage text-center" ng-if="$ctrl.error">Something Went Wrong Couldn't Fetch Data<br>
+																				{{$ctrl.errorText}}</div> 
+</div>

@@ -1,0 +1,62 @@
+<div class="container">
+<div class="row">
+<span><a ui-sref="home" href="#/home" ui-sref-active="activeTab" style="font-size: 1.5em;">Home</a></span>
+<span style="font-size: 2em;color: black;">-</span>
+<span><a ui-sref="departments" href="#/departments" ui-sref-active="activeTab" style="font-size: 1.5em;">Departments</a></span>
+<span style="font-size: 2em;color: black;">-</span>
+<span class="activeTab">{{departmentDetail.department}}</span><br>
+
+
+</div>
+<div class="row"><br>
+<div ng-if ="departmentDetail.items.department_name" class="panel panel-primary">
+  <div class="panel-heading text-center" style="background-color: #428bca;padding-top: 10px;">
+  		<h1 style="margin-left:20px;text-transform: capitalize;"> {{departmentDetail.items.department_name}} ({{departmentDetail.department}})</h1>
+  </div>
+  <div class="panel-body">
+  	<h4 style="margin-left:20px;text-align:center; ">No. Of Faculty Members : {{departmentDetail.faculty.official1.no_of_officials}}
+          <button style="margin-left: 20px;" ng-if="departmentDetail.btn" class="btn btn-primary" ng-click="departmentDetail.showFn()">Show Faculty Members</button>
+          <button style="margin-left: 20px;" ng-hide="departmentDetail.btn" class="btn btn-primary" ng-click="departmentDetail.hideFn()">Hide
+          </button><h4>
+          <div ng-if="departmentDetail.show"><h4 ng-repeat="officials in departmentDetail.faculty">{{officials.official_name}}</h4><h5>For More Details On Faculty Members head Over to Faculty Link</h5></div>
+  
+        <h3 style="width: 100%;text-align: center;background-color: lavender; padding: 20px;">HOD : {{departmentDetail.items.hod_name}}</h3>
+        <h2 style="width: 100%;">Main Objectives : </h2>
+			<ul>
+				<li ng-repeat="details in departmentDetail.departmentDesc">
+				{{details}}</li>
+			</ul>  
+	<div ng-hide="departmentDetail.items.department_name"  class="errorMessage">Error Loading Page<br>
+									Please make sure that web address(URL) is corretly spelled</div>     
+  </div>
+</div>
+
+
+
+<!-- <div ng-if ="departmentDetail.items.department_name" class="aboutus_p"><br>
+      <ul class="tab">
+              <h1 style="margin-left:20px;text-transform: capitalize;"> {{departmentDetail.items.department_name}} ({{departmentDetail.department}})</h1>                                                           
+      </ul>
+
+      <div id="aboutus" class="tabcontent">
+        <div id="mission" class="tabcontent">
+        <h4 style="margin-left:20px;text-align:center; ">No. Of Faculty Members : {{departmentDetail.faculty.official1.no_of_officials}}
+          <button style="margin-left: 20px;" ng-if="departmentDetail.btn" class="btn btn-primary" ng-click="departmentDetail.showFn()">Show Faculty Members</button>
+          <button style="margin-left: 20px;" ng-hide="departmentDetail.btn" class="btn btn-primary" ng-click="departmentDetail.hideFn()">Hide
+          </button><h4>
+          <div ng-if="departmentDetail.show"><h4 ng-repeat="officials in departmentDetail.faculty">{{officials.official_name}}</h4><h5>For More Details On Faculty Members head Over to Faculty Link</h5></div>
+  
+        <h3 style="width: 75%;">HOD : {{departmentDetail.items.hod_name}}</h3>
+        <h2 style="width: 100%;">Main Objectives : </h2>
+			<ul>
+				<li ng-repeat="details in departmentDetail.departmentDesc">
+				{{details}}</li>
+			</ul>       
+
+        </div> 
+      </div>
+</div>
+<div ng-hide="departmentDetail.items.department_name"  class="errorMessage">Error Loading Page<br>
+Please make sure that web address(URL) is corretly spelled</div> -->
+</div>
+</div>

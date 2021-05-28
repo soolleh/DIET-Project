@@ -1,0 +1,6 @@
+ <span ng-if="itemDetails.category"><h1>Here Are Your Menu ItemsFor Categroy: {{itemDetails.category}}</h1></span>
+<a href="#/home" ui-sref="home" ui-sref-active="activeTab">Home</a><span style="font-size: 2em;"> &lt;</span>
+<a href="#/categories" ui-sref="categories" ui-sref-active="activeTab">Category</a>
+<span ng-if="itemDetails.category" style="font-size: 2em;"> &lt;</span>
+<span ng-if="itemDetails.category" class="activeTab">{{itemDetails.category}}</span><br>
+<item-detail items="itemDetails.items"></item-detail>
